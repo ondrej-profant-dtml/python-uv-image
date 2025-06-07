@@ -58,7 +58,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: . # Build context is the repository root
+          context: ./debian-trixie
           push: true # Push the image after building
           tags: ${{ steps.meta.outputs.tags }} # Use tags generated in step 3
           labels: ${{ steps.meta.outputs.labels }} # Add labels (e.g. repository link)

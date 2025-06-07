@@ -47,7 +47,6 @@ podman build -t ghcr.io/ondrej-profant-dtml/python-uv-image:latest .
 podman push ghcr.io/ondrej-profant-dtml/python-uv-image:latest
 ```
 
-
 ## Purpose
 
 The main goal is to provide a modern Python environment with fast dependency management and publishing tools, suitable for CI/CD pipelines or local development.
@@ -55,4 +54,3 @@ The main goal is to provide a modern Python environment with fast dependency man
 Inspired by [astral-sh/uv-docker-example](https://github.com/astral-sh/uv-docker-example/tree/main).
 
 **License:** MIT
-
