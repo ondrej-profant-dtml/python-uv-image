@@ -39,6 +39,15 @@ podman run --rm python-uv
 docker run --rm python-uv
 ```
 
+### Push to GHCR
+
+```sh
+podman login ghcr.io --username ondrej-profant-dtml --password <token>
+podman build -t ghcr.io/ondrej-profant-dtml/python-uv-image:latest .
+podman push ghcr.io/ondrej-profant-dtml/python-uv-image:latest
+```
+
+
 ## Purpose
 
 The main goal is to provide a modern Python environment with fast dependency management and publishing tools, suitable for CI/CD pipelines or local development.
